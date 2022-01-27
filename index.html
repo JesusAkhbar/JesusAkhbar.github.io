@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ДДТ Frontend</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>.none {display: none;} .fixed {overflow: hidden;}
+    .cancel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    padding: 0 20px 10px;
+    width: 400px;
+    height: 30px;
+    cursor: pointer;
+    color: #fff;
+    border: 0;
+    background-color: chocolate;
+  }
+  </style>
+</head>
+<body>
+  <button class="cancel none">
+    Вернуть все обратно
+  </button>
+  <header class="header">
+    <div class="container flex header-container">
+      <img src="img/logo.svg" alt="Logo" class="logo">
+      <nav class="nav">
+        <ul class="nav-list flex">
+          <li class="nav-list-item">
+            <a href="#skills">Какие знания я получу?</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#">Где и когда?</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero flex">
+      <div class="container flex hero-container">
+        <h1 class="hero-title">
+          <span>Учебный курс по</span> <strong>FrontEnd разработке</strong>
+        </h1>
+        <p class="hero-descr descr-1">
+          FrontEnd разработчик создает видимую для пользователя часть веб-страницы и его главная задача – точно передать в верстке то, что создал дизайнер.
+        </p>
+        <p class="hero-descr descr-2">
+          Для того, чтобы стать FrontEnd разработчиком, не нужны знания математики. Освоить специальность можно за 3-6 месяцев, в зависимости от того, сколько времени будете уделять теории и кодингу.
+        </p>
+      </div>
+    </section>
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2 class="section_title skills-title">
+          Знания которые ты получишь
+        </h2>
+        <ul class="skills-list flex">
+          <li class="skills-list-item flex">
+            <h3 class="skills-list-item-title">
+              HTML
+            </h3>
+            <p class="skills-list-item-descr">
+              Стандартизированный язык разметки документов для просмотра веб-страниц в браузере. Весь текст, а так же каждый раздел этой веб-страницы это и есть разметка веб-страницы.
+            </p>
+          </li>
+          <li class="skills-list-item flex">
+            <h3 class="skills-list-item-title">
+              CSS
+            </h3>
+            <p class="skills-list-item-descr">
+              Формальный язык описания внешнего вида документа, написанного с использованием языка разметки. Задает стилька веб-странице.
+            </p>
+          </li>
+          <li class="skills-list-item flex">
+            <h3 class="skills-list-item-title">
+              JavaScript
+            </h3>
+            <p class="skills-list-item-descr">
+              Язык программирования. JavaScript обычно используется как встраиваемый язык для программного доступа к объектам приложений. В нашем случае к HTML объектам.
+            </p>
+          </li>
+        </ul>
+        <div class="show-wrapper">
+          <button class="show">
+            Эта кнопка с помощью JavaScript покажет как выглядит чистая HTML разметка без CSS стилей.
+          </button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts/scripts.js"></script>
+</body>
+</html>
