@@ -69,13 +69,12 @@ body {
 }
 
 .section {
-  padding: 80px 0;
+  padding: 250px 0;
   border-bottom: 2px solid chocolate;
   border-top: 2px solid blue;
-  background-color: #13161b;
 }
 
-.section_title {
+.section-title {
   display: inline-block;
   margin: 0;
   margin-bottom: 50px;
@@ -104,13 +103,18 @@ body {
   width: 300px;
 }
 
+.nav-list-item a:hover {
+  color: blue;
+  border-bottom: 1px solid chocolate;
+}
+
 .nav-list-item:not(:last-child) {
   margin-right: 20px;
 }
 
 .hero {
   align-items: center;
-  background: url('../img/hero-bg.jpg');
+  background: url('../img/hero-bg.jpg') no-repeat center center / cover;
   height: 100vh;
 }
 
@@ -162,6 +166,10 @@ body {
   background-color: chocolate;
 }
 
+.skills {
+  background-color: #13161b;
+}
+
 .skills-list {
   margin-bottom: 40px;
   justify-content: space-between;
@@ -176,6 +184,7 @@ body {
 }
 
 .skills-list-item-title {
+  align-self: flex-end;
   margin: 0;
   margin-bottom: 5px;
   padding: 0 20px 10px;
@@ -204,3 +213,77 @@ body {
   border: 2px solid blue;
 }
 
+.loca {
+  background-color: #13161b;
+}
+
+.loca-list {
+  justify-content: space-between;
+  color: #fff;
+}
+
+.loca-list-item {
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 40%;
+}
+
+.loca-list-item-title {
+  align-self: flex-end;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0 20px 10px;
+  background-color: chocolate;
+}
+
+.loca-list-item-descr {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0 20px 10px;
+  background-color: blue;
+}
+
+.loca-list-item-descr span {
+  text-transform: uppercase;
+  background-color: chocolate;
+}
+
+.loca-list-item-descr-2 {
+  align-self: flex-end;
+  margin: 0;
+  padding: 0 20px 10px;
+  background-color: chocolate;
+}
+
+.contacts {
+  background-color: #13161b;
+}
+
+.contacts-list {
+  margin-bottom: 40px;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.contacts-list-item {
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 33%;
+}
+
+.vk {
+  padding-top: 70px;
+  background: url('../img/VK.png') no-repeat top center / contain;
+}
+
+.inst {
+  padding-top: 70px;
+  background: url('../img/Instagram.png') no-repeat top center / contain;
+}
+
+.wat {
+  padding-top: 70px;
+  background: url('../img/WhatsApp.png') no-repeat top center / contain;
+}
