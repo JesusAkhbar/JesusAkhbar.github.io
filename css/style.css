@@ -114,9 +114,9 @@ body {
 }
 
 .hero {
+  padding: 100px 0;
   align-items: center;
   background: url('../img/hero-bg.jpg') no-repeat center center / cover;
-  height: 100vh;
 }
 
 .hero-container {
