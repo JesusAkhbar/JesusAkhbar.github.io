@@ -2,152 +2,54 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <title>ДДТ Frontend</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная страница</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <style>.none {display: none;} .fixed {overflow: hidden;}
-    .cancel {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    z-index: 1000;
-    transform: translate(-50%, -50%);
-    padding: 0 20px 10px;
-    width: 400px;
-    height: 30px;
-    cursor: pointer;
-    color: #fff;
-    border: 0;
-    background-color: chocolate;
-    border: 2px solid blue;
-  }
-  </style>
 </head>
 <body>
-  <button class="cancel none">
-    Вернуть все обратно
-  </button>
-  <header class="header">
+  <div class="main-content">
     <div class="container flex header-container">
-      <p class="logo">
-        Муниципальное бюджетное образовательное учреждение дополнительного образования Дом детского творчества Чистоозёрного района Новосибирской области
-      </p>
+      Муниципальное бюджетное образовательное учреждение дополнительного образования Дом детского творчества Чистоозёрного района Новосибирской области
     </div>
-  </header>
-  <main class="main">
-    <section class="hero flex">
-      <div class="container flex hero-container">
-        <h1 class="hero-title">
-          <span>Учебный курс по</span> <strong>FrontEnd разработке</strong>
-        </h1>
-        <p class="hero-descr descr-1">
-          FrontEnd разработчик создает видимую для пользователя часть веб-страницы.
-        </p>
-        <p class="hero-descr descr-2">
-          Для того, чтобы стать FrontEnd разработчиком, не нужны знания математики. Освоить специальность может каждый. Курс подойдёт для мальчиков и девочек старше 14 лет.
-        </p>
-      </div>
-    </section>
-    <section id="skills" class="section skills">
-      <div class="container">
-        <h2 class="section-title skills-title">
-          Знания, которые ты получешь
-        </h2>
-        <ul class="skills-list flex">
-          <li class="skills-list-item flex">
-            <h3 class="skills-list-item-title">
-              HTML
-            </h3>
-            <p class="skills-list-item-descr">
-              Стандартизированный язык разметки документов для просмотра веб-страниц в браузере. Весь текст, а так же каждый раздел этой веб-страницы это и есть разметка.
-            </p>
-          </li>
-          <li class="skills-list-item flex">
-            <h3 class="skills-list-item-title">
-              CSS
-            </h3>
-            <p class="skills-list-item-descr">
-              Формальный язык описания внешнего вида документа, написанного с использованием языка разметки. Делает веб-страницу красивой.
-            </p>
-          </li>
-          <li class="skills-list-item flex">
-            <h3 class="skills-list-item-title">
-              JavaScript
-            </h3>
-            <p class="skills-list-item-descr">
-              Язык программирования. JavaScript обычно используется как встраиваемый язык для программного доступа к объектам и взаимодействия с ними. Во FrontEnd этими объектами являются HTML и CSS.
-            </p>
-          </li>
-        </ul>
-        <div class="show-wrapper">
-          <button class="show">
-            Эта кнопка с помощью JavaScript покажет как выглядит чистая HTML разметка без CSS стилей.
-          </button>
+    <div class="articles flex">
+      <a class="articles-links python__link" href="modules.html" target="_blank">
+        <div class="overlay__python flex">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum ipsa consequuntur corporis deserunt ab magnam saepe excepturi tenetur nobis molestiae, quaerat, eum quod tempora. Nesciunt eius reiciendis a at quae!
         </div>
-      </div>
-    </section>
-    <section id="loca" class="section loca">
-      <div class="container">
-        <h2 class="section-title loca-title">
-          Где и когда
-        </h2>
-        <ul class="loca-list flex">
-          <li class="loca-list-item flex">
-            <h3 class="loca-list-item-title">
-              МБОУ ЧСОШ№3
-            </h3>
-              <p class="loca-list-item-descr">
-                На базе школы №3 занятия проходят по <span>средам и четвергам</span> в <span>12:00 и 15:00</span>
-              </p>
-              <p class="loca-list-item-descr-2">
-                *в помещении музея ДДТ
-              </p>
-          </li>
-          <li class="loca-list-item flex">
-            <h3 class="loca-list-item-title">
-              МБОУ ЧСОШ№1
-            </h3>
-            <p class="loca-list-item-descr">
-              На базе школы №1 занятия проходят по <span>понедельникам и пятницам</span> в <span>12:00</span>
-            </p>
-            <p class="loca-list-item-descr-2">
-              *в дальнем кабинете мастерской
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
+      </a>
+      <a class="articles-links front__link flex" href="front/front.html" target="_blank">
+        <img src="img/front.png" alt="">
+        <div class="overlay"></div>
+        <div class="overlay__python flex">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam in modi architecto, sit omnis dicta assumenda aut quae similique, qui incidunt quibusdam hic fugit? Deserunt ipsum eligendi voluptatum voluptates porro!
+        </div>
+      </a>
+    </div>
     <section id="contacts" class="section contacts">
-      <div class="container">
-        <h2 class="section-title contacts-title">
-          По всем вопросам писать сюда &darr;
-        </h2>
-        <ul class="contacts-list flex">
-          <li class="contacts-list-item flex">
-            <a class="vk" href="https://vk.com/club210391261" target="_blank">
-              <span>Наша группа ВКонтакте</span>
-            </a>
-          </li>
-          <li class="contacts-list-item flex">
-            <a class="inst" href="https://www.instagram.com/vse_yas_no/?hl=ru" target="_blank">
-              <span>Инстаграмм преподователя</span>
-            </a>
-          </li>
-          <li class="contacts-list-item flex">
-            <a class="wat" href="tel:+79537673143" target="_blank">
-              <span>WhatsApp</span><span> +7 953 767 31 43</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="contacts-list flex">
+        <li class="contacts-list-item flex">
+          <a class="vk" href="https://vk.com/club210391261" target="_blank">
+            <span>Наша группа ВКонтакте</span>
+          </a>
+        </li>
+        <li class="contacts-list-item flex">
+          <a class="inst" href="https://www.instagram.com/vse_yas_no/?hl=ru" target="_blank">
+            <span>Инстаграмм преподователя</span>
+          </a>
+        </li>
+        <li class="contacts-list-item flex">
+          <a class="wat" href="tel:+79537673143" target="_blank">
+            <span>WhatsApp</span><span> +7 953 767 31 43</span>
+          </a>
+        </li>
+      </ul>
     </section>
     <section class="section flex copy">
-      <p>Сайт создан преподователем курса</p>
+      <p>Сайт создан преподователем</p>
       <span>Рашевым Евгением Сергеевичем</span>
     </section>
-  </main>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="scripts/scripts.js"></script>
+  </div>
 </body>
 </html>
