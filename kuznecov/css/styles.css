@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Medium"), url("../fonts/MullerMedium.woff2") format("woff2"), url("../fonts/MullerMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Regular"), url("../fonts/MullerRegular.woff2") format("woff2"), url("../fonts/MullerRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Bold"), url("../fonts/MullerBold.woff2") format("woff2"), url("../fonts/MullerBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  box-sizing: border-box;
+}
+*,*::before,*::after {
+  box-sizing: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+}
+p {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  position: relative;
+  font-family: "Muller", Sans-Serif;
+  background-color: #f1f1f1;
+}
+.flex {
+  display: flex;
+}
+
+.nav {
+  position: fixed;
+  top: 40%;
+  right: 5%;
+  background-color: rgb(184, 184, 184);
+}
+.nav-list {
+  border: 1px solid;
+}
+.nav-list-item {
+  border-bottom: 1px solid;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 20px 0;
+}
+.header {
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  color: rgb(168, 168, 168);
+  background: url(../img/background.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+.header hr {
+  width: 50%;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 300px;
+}
+.profile {
+  padding: 0 0 60px 0;
+}
+.profile-all {
+  justify-content: space-between;
+}
+.profile-left {
+  max-width: 300px;
+}
+.profile-right {
+  max-width: 300px;
+}
+
+.profile-title {
+  text-align: center;
+}
+.hobbies {
+  padding: 0 0 60px 0;
+}
+.hobbies-title {
+  text-align: center;
+}
+.achievements {
+  padding: 0 0 60px 0;
+}
+.achievements-title {
+  text-align: center;
+}
+.contacts {
+  padding: 0 0 60px 0;
+}
+.contacts-title {
+  text-align: center;
+}
+
+.hobbie-block-1 {
+  background: url(../img/hobbie-1.jpg) no-repeat right top;
+  padding-right: 100px;
+  padding-bottom: 65px;
+  background-size: 250px;
+
+}
+.hobbie-block-1 h3 {
+  width: 50%;
+}
+.hobbie-block-1 p {
+  width: 50%;
+}
+.hobbie-block-2 {
+  background: url(../img/hobbie-2.jpg) no-repeat right top;
+  padding-right: 100px;
+  padding-bottom: 65px;
+  background-size: 150px;
+}
+.hobbie-block-2 h3 {
+  width: 50%;
+}
+.hobbie-block-2 p {
+  width: 50%;
+}
+.hobbie-block-3 {
+  background: url(../img/hobbie-3.jpg) no-repeat right top;
+  padding-right: 100px;
+  padding-bottom: 65px;
+  background-size: 250px;
+}
+.hobbie-block-3 h3 {
+  width: 50%;
+}
+.hobbie-block-3 p {
+  width: 50%;
+}
+.achievements-block-1 {
+  background: url(../img/achievements-1.jpg) no-repeat right top;
+  padding-right: 100px;
+  padding-bottom: 140px;
+  background-size: 200px;
+}
+.achievements-block-1 h3 {
+  width: 50%;
+}
+.achievements-block-1 p {
+  width: 50%;
+}
+.achievements-block-2 {
+  background: url(../img/achievements-2.jpg) no-repeat right top;
+  padding-right: 100px;
+  padding-bottom: 65px;
+  background-size: 200px;
+}
+.achievements-block-2 h3 {
+  width: 50%;
+}
+.achievements-block-2 p {
+  width: 50%;
+}
+.contacts-list {
+  flex-direction: column;
+  align-items: center;
+}
+.contacts-list-block-vk {
+  padding: 10px 0 60px 0;
+}
+.contacts-list-block-vk-title {
+  background: url(../img/vk.png) no-repeat right top;
+  background-size: 16px;
+  padding-right: 20px;
+}
+.contacts-list-block-discord-title {
+  background: url(../img/discord.png) no-repeat right top;
+  background-size: 20px;
+}
