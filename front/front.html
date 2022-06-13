@@ -6,33 +6,32 @@
   <title>ДДТ Frontend</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <style>.none {display: none;} .fixed {overflow: hidden;}
-    .cancel {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    z-index: 1000;
-    transform: translate(-50%, -50%);
-    padding: 0 20px 10px;
-    width: 400px;
-    height: 30px;
-    cursor: pointer;
-    color: #fff;
-    border: 0;
-    background-color: chocolate;
-    border: 2px solid blue;
-  }
-  </style>
 </head>
 <body>
-  <button class="cancel none">
-    Вернуть все обратно
-  </button>
   <header class="header">
-    <div class="container flex header-container">
-      <p class="logo">
-        Муниципальное бюджетное образовательное учреждение дополнительного образования Дом детского творчества Чистоозёрного района Новосибирской области
-      </p>
+    <div class="container header-container">
+      <nav class="nav">
+        <ul class="nav__list flex">
+          <a href="../index.html" class="nav__item">
+            На главную
+          </a>
+          <a href="#skills" class="nav__item">
+            Чему я научусь?
+          </a>
+          <a href="#all__works" class="nav__item">
+            Общие проекты учеников
+          </a>
+          <a href="#self__works" class="nav__item">
+            Личные проекты учеников
+          </a>
+          <a href="#loca" class="nav__item">
+            Расписание
+          </a>
+          <a href="#contacts" class="nav__item">
+            Контакты
+          </a>
+        </ul>
+      </nav>
     </div>
   </header>
   <main class="main">
@@ -48,8 +47,9 @@
           Для того, чтобы стать FrontEnd разработчиком, не нужны знания математики. Освоить специальность может каждый. Курс подойдёт для мальчиков и девочек старше 14 лет.
         </p>
       </div>
+      <div class="overlay"></div>
     </section>
-    <section id="skills" class="section skills">
+    <section id="skills" class="section skills flex">
       <div class="container">
         <h2 class="section-title skills-title">
           Знания, которые ты получешь
@@ -80,14 +80,74 @@
             </p>
           </li>
         </ul>
-        <div class="show-wrapper">
-          <button class="show">
-            Эта кнопка с помощью JavaScript покажет как выглядит чистая HTML разметка без CSS стилей.
-          </button>
+      </div>
+    </section>
+    <section id="all__works" class="section all__works flex">
+      <div class="container">
+        <h2 class="section-title all__works-title">
+          Общие проекты учеников
+        </h2>
+        <div class="flex-wrapper">
+          <div class="slider-wrapper">
+              <div class="slide flex active">
+                <a href="../news/news.html" class="slide__link" target="_blank">
+                  Новостной сайт
+                </a>
+                <div class="slide__overlay img_1"></div>
+              </div>
+              <div class="slide flex">
+                <a href="../lagoona/lagoona.html" class="slide__link" target="_blank">
+                  Сайт путешествий
+                </a>
+                <div class="slide__overlay img_2"></div>
+              </div>
+              <img src="img/arrow.png" id="btn-prev">
+              <img src="img/arrow_2.png" id="btn-next">
+          </div>
+        </div>
+        <div class="dots-wrapper">
+            <span class="dot active"></span>
+            <span class="dot"></span>
         </div>
       </div>
     </section>
-    <section id="loca" class="section loca">
+    <section id="self__works" class="section self__works flex">
+      <div class="container">
+        <h2 class="section-title self__works-title">
+          Личные проекты учеников
+        </h2>
+        <div class="self__flex-wrapper">
+          <div class="self__slider-wrapper">
+              <div class="self__slide flex active">
+                <a href="../kuznecov/kuznecov.html" class="self__slide__link" target="_blank">
+                  Кузнецов Дмитрий
+                </a>
+                <div class="self__slide__overlay self__img_1"></div>
+              </div>
+              <div class="self__slide flex">
+                <a href="#" class="self__slide__link" target="_blank">
+                  Сайт путешествий
+                </a>
+                <div class="self__slide__overlay self__img_2"></div>
+              </div>
+              <div class="self__slide flex">
+                <a href="#" class="self__slide__link" target="_blank">
+                  Сайт путешествий
+                </a>
+                <div class="self__slide__overlay self__img_2"></div>
+              </div>
+              <img src="img/arrow.png" id="self__btn-prev">
+              <img src="img/arrow_2.png" id="self__btn-next">
+          </div>
+        </div>
+        <div class="self__dots-wrapper">
+            <span class="self__dot active"></span>
+            <span class="self__dot"></span>
+            <span class="self__dot"></span>
+        </div>
+      </div>
+    </section>
+    <section id="loca" class="section loca flex">
       <div class="container">
         <h2 class="section-title loca-title">
           Где и когда
@@ -118,7 +178,7 @@
         </ul>
       </div>
     </section>
-    <section id="contacts" class="section contacts">
+    <section id="contacts" class="section contacts flex">
       <div class="container">
         <h2 class="section-title contacts-title">
           По всем вопросам писать сюда &darr;
@@ -142,10 +202,10 @@
         </ul>
       </div>
     </section>
-    <section class="section flex copy">
+    <div class="flex copy">
       <p>Сайт создан преподователем курса</p>
       <span>Рашевым Евгением Сергеевичем</span>
-    </section>
+    </div>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="scripts/scripts.js"></script>

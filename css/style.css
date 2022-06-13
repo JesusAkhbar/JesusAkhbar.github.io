@@ -17,13 +17,22 @@ img {
 	max-width: 100%;
 }
 
+.container {
+  max-width: 1500px;
+  padding: 0 auto;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
 .flex {
   display: flex;
 }
 
 .header-container {
-  padding: 20px 0;
+  padding: 0 0 20px 0;
+  align-items: center;
   justify-content: center;
+  flex-direction: column;
   background-color: #fff;
   color: #000;
   font-weight: 500;
@@ -31,10 +40,18 @@ img {
   line-height: 130%;
 }
 
+.header-container:first-child {
+  padding: 20px 0 0 0;
+}
+
 .main-content {
-  min-height: 100vh;
+  min-height: 87vh;
   color: #fff;
-  background-color: #070217;
+  background-color: #070217;;
+}
+
+hr {
+  width: 50%;
 }
 
 .logo {
@@ -44,11 +61,11 @@ img {
 }
 
 .articles {
-  height: 60vh;
+  height: 55vh;
   width: 100%;
   justify-content: space-evenly;
   margin: 0;
-  margin-bottom: 50px;
+  border-top: 1px solid #000;
   border-bottom: 1px solid white;
 }
 
@@ -79,6 +96,7 @@ img {
   opacity: 0;
   background: black;
   z-index: 15;
+  font-size: 30px;
 }
 
 .python__link:hover .overlay__python {
@@ -111,8 +129,16 @@ img {
   z-index: 5;
 }
 
+.contacts {
+  margin: 0;
+  padding-top: 60px;
+  background-color: #070217;
+  font-size: 20px;
+}
+
 .contacts-list {
-  margin-bottom: 40px;
+  margin: 0;
+  padding-bottom: 40px;
   justify-content: space-between;
   color: #fff;
 }
@@ -153,6 +179,8 @@ img {
   flex-direction: column;
   align-items: center;
   padding: 20px 0;
+  font-size: 19px;
+  background-color: #070217;;
 }
 
 .copy p {

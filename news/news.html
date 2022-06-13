@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Новостное агентство</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="jquery-3.4.1.min.js"></script>
+		<script src="script.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<header>
+			<div class="black-bar">
+				<div class="fixed-container">
+					<div class="title">Самые <a href="#">свежие новости</a> в реальном времени</div>
+					<time class="bb-date" datetime="2020-04-09T14:52+07:00">14:52 09.04.2020</time>
+				</div>
+			</div>
+			<div class="header">
+				<div class="fixed-container">
+					<div class="hamburger-menu">
+						<input id="menu__toggle" type="checkbox" />
+						<label class="menu__btn" for="menu__toggle">
+							<span></span>
+						</label>
+						<ul class="menu__box">
+							<li><a class="menu__item" href="#">Главная</a></li>
+							<li><a class="menu__item" href="#">Политика</a></li>
+							<li><a class="menu__item" href="#">Общество</a></li>
+							<li><a class="menu__item" href="#">Экономика</a></li>
+							<li><a class="menu__item" href="#">В мире</a></li>
+							<li><a class="menu__item" href="#">Проишествия</a></li>
+							<li><a class="menu__item" href="#">Спорт</a></li>
+							<li><a class="menu__item" href="#">Наука</a></li>
+							<li><a class="menu__item" href="#">Туризм</a></li>
+						</ul>
+					</div>
+					<img class="new-logo" src="img/new-logo.png" alt="Логотип сайта">
+					<img class="new-search" src="img/search-logo.png" alt="Поиск">
+					<img class="logo" src="img/logo.png" alt="Логотип сайта">
+					<p class="city">Москва</p>
+					<p class="weather">+22<sup>o</sup>C</p>
+					<input class="search" type="text" placeholder="Поиск по сайту" name="search">
+				</div>
+			</div>
+			<nav class="menu-list">
+				<div class="fixed-container">
+					<time class="new-bb-date" datetime="2020-04-09T14:52+07:00">14:52 09.04.2020</time>
+					<p class="new-weather">+22<sup>o</sup>C</p>
+					<ul>
+						<li class="menu-words"><a  href="#">Главная</a></li>
+						<li class="menu-words"><a href="#">Политика</a></li>
+						<li class="menu-words"><a href="#">Общество</a></li>
+						<li class="menu-words"><a href="#">Экономика</a></li>
+						<li class="menu-words"><a href="#">В мире</a></li>
+						<li class="menu-words"><a href="#">Проишествия</a></li>
+						<li class="menu-words"><a href="#">Спорт</a></li>
+						<li class="menu-words"><a href="#">Наука</a></li>
+						<li class="menu-words"><a href="#">Туризм</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main class="central-container">
+			<div class="fixed-container" id="abc">
+				<article class="column-left">
+					<h2>Новости дня</h2>
+					<section class="news-item">
+						<p class="news-item-text">Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
+						</p>
+						<div class="news-item-props">
+							<a href="#">/ЧМ по футболу</a>
+							<time class="news-time">16:38</time>
+							<span class="news-comments-count">17</span>
+						</div>
+					</section>
+					<section class="news-item">
+						<p class="news-item-text">Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
+						</p>
+						<div class="news-item-props">
+							<a href="#">/ЧМ по футболу</a>
+							<time class="news-time">16:38</time>
+							<span class="news-comments-count">17</span>
+						</div>
+					</section>
+					<section class="news-item">
+						<p class="news-item-text">Кот Ахилл предсказал победу российской сборной над Египтом на ЧМ-2018
+						</p>
+						<div class="news-item-props">
+							<a href="#">/ЧМ по футболу</a>
+							<time class="news-time">16:38</time>
+							<span class="news-comments-count">17</span>
+						</div>
+					</section>
+					<a href="#" class="all-news">Все новости</a>
+					<section class="currency">
+						<div class="base">Курс
+						</div>
+						<div class="USD">Доллар США:
+						</div>
+						<div class="RUB">Рубль РФ:
+						</div>
+					</section>
+				</article>
+				<article class="column-center">
+					<section class="main-news">
+							<img src="img/main-bg.png" alt="bg">
+							<a href="#">/Политика</a>
+							<h3>В Крыму отреагировали на слова Кравчука о возврате полуострова</h3>
+							<div class="main-news-item-props">
+								<time datetime="2020-03-27" class="main-news-data">27 Марта 2020</time>
+								<time class="main-news-time">16:38</time>
+							</div>
+					</section>
+					<section class="central-news">
+						<div class="main-column-left">
+								<div class="central-item">
+									<img src="img/central-photo.png" alt="Фото">
+									<p class="central-item-text">Алексей Навальный объявил акцию против пенсионной реформы 1 июля
+									</p>
+									<div class="central-item-props">
+										<a href="#">/Политика</a>
+										<time class="central-time">16:38</time>
+										<span class="central-comments-count">17</span>
+									</div>
+								</div>
+								<div class="central-item">
+									<img src="img/central-photo.png" alt="Фото">
+									<p class="central-item-text">Алексей Навальный объявил акцию против пенсионной реформы 1 июля
+									</p>
+									<div class="central-item-props">
+										<a href="#">/Политика</a>
+										<time class="central-time">16:38</time>
+										<span class="central-comments-count">17</span>
+									</div>
+								</div>
+						</div>
+						<div class="main-column-right">
+								<div class="central-item">
+									<img src="img/central-photo.png" alt="Фото">
+									<p class="central-item-text">Алексей Навальный объявил акцию против пенсионной реформы 1 июля
+									</p>
+									<div class="central-item-props">
+										<a href="#">/Политика</a>
+										<time class="central-time">16:38</time>
+										<span class="central-comments-count">17</span>
+									</div>
+								</div>
+								<div class="central-item">
+									<img src="img/central-photo.png" alt="Фото">
+									<p class="central-item-text">Алексей Навальный объявил акцию против пенсионной реформы 1 июля</p>
+									<div class="central-item-props">
+										<a href="#">/Политика</a>
+										<time class="central-time">16:38</time>
+										<span class="central-comments-count">17</span>
+									</div>
+								</div>
+						</div>
+					</section>
+				</article>
+				<aside class="column-right">
+					<a href="#"><img src="img/banner-1.png" alt="Реклама"></a>
+					<a href="#"><img src="img/banner-2.png" alt="Реклама"></a>
+				</aside>
+			</div>
+			<div class="fixed-container">
+				<section class="bottom-left">
+					<a href="#">/Политика</a>
+					<h3>Пекин обвинил Вашингтон в развязывании торговой войны</h3>
+					<div class="bottom-left-item-props">
+						<time datetime="2020-03-27" class="bottom-left-data">27 Марта 2020</time>
+						<time class="bottom-left-time">16:38</time>
+					</div>
+					<p>Министерство коммерции Китая заявило, что Пекин примет «качественные» и «количественные» меры, если президент США Дональд Трамп введет дополнительные пошлины на китайские товары</p>
+				</section>
+				<section class="bottom-right">
+					<h2>Самые читаемые новости</h2>
+					<div class="bottom-right-item">
+						<p class="bottom-right-text">В Турции пообещали найти альтернативу из-за отказа США поставить F-35</p>
+						<div class="bottom-right-props">
+							<a href="#">/Политика</a>
+							<time class="bottom-right-time">16:38</time>
+							<span class="bottom-right-count">17</span>
+						</div>
+					</div>
+					<div class="bottom-right-item">
+						<p class="bottom-right-text">В Турции пообещали найти альтернативу из-за отказа США поставить F-35</p>
+						<div class="bottom-right-props">
+							<a href="#">/Политика</a>
+							<time class="bottom-right-time">16:38</time>
+							<span class="bottom-right-count">17</span>
+						</div>
+					</div>
+					<div class="bottom-right-item">
+						<p class="bottom-right-text">В Турции пообещали найти альтернативу из-за отказа США поставить F-35</p>
+						<div class="bottom-right-props">
+							<a href="#">/Политика</a>
+							<time class="bottom-right-time">16:38</time>
+							<span class="bottom-right-count">17</span>
+						</div>
+					</div>
+				</section>	
+			</div>	
+		</main>
+		<footer>
+			<article class="footer-bar">
+				<div class="fixed-container" id="footer-flex">
+					<ul class="footer-list-left">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Политика</a></li>
+						<li><a href="#">Общество</a></li>
+						<li><a href="#">Экономика</a></li>
+						<li><a href="#">В мире</a></li>
+						<li><a href="#">Проишествия</a></li>
+						<li><a href="#">Спорт</a></li>
+						<li><a href="#">Наука</a></li>
+						<li><a href="#">Туризм</a></li>
+					</ul>
+					<ul class="footer-list-center">
+						<li><a href="#"><img src="img/logo-bottom.png" alt="Логотип"></a></li>
+						<li><a href="#">Политика</a></li>
+						<li><a href="#">Общество</a></li>
+						<li><a href="#">Экономика</a></li>
+					</ul>
+					<div class="footer-contacts">
+						<ul class="social">
+							<li class="inst"><a href="#"></a></li>
+							<li class="tw"><a href="#"></a></li>
+							<li class="fb"><a href="#"></a></li>
+							<li class="vk"><a href="#"></a></li>
+						</ul>
+						<li class="tell"><a href="tel:+74999955555">+7 (499) 995-55-55</a></li>
+						<li class="mail"><a href="mailto:info@agency.ru">info@agency.ru</a></li>
+					</div>
+				</div>
+			</article>
+			<section class="copyright">
+				<p>&copy; Новостное агентство, 2017-2018 все права защищены</p>
+			</section>
+		</footer>
+	</body>
+</html>
