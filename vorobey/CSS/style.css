@@ -1,0 +1,296 @@
+@font-face {
+  font-family:"Muller";
+  src:local("Muller-Medium") url("../fonts/MullerMedium.woff2") format(woff2) url("../fonts/MullerMedium.woff") format(woff);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family:"Muller";
+  src:local("Muller-Regular") url("../fonts/MullerRegular.woff2") format(woff2) url("../fonts/MullerRegular.woff") format(woff);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family:"Muller";
+  src:local("Muller-Medium") url("../fonts/MullerBold.woff2")  format(woff2) url("../fonts/MullerBold.woff") format(woff);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muller", Sans-Serif;
+}
+
+*,*::before,*::after {
+  box-sizing:inherit;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+.header {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  background: url(../img/cosmic-igra-game-enigma-elemental-enigma-art-dota-2-armor-do.jpg) no-repeat center fixed;
+  background-size: cover;
+  background-color: black;
+}
+.header__contain {
+  position: relative;
+  z-index: 3;
+  align-items: center;
+  flex-direction: column;
+}
+.header hr {
+  width: 90%;
+}
+.header__title {
+  color:#b8d4c5;
+}
+.flex{
+ display: flex;
+}
+.header__wrapper {
+ position: absolute;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ background-color: black;
+ z-index: 2;
+ opacity: 50%;
+}
+.header__nav {
+  flex-direction: column;
+  position: absolute;
+  right: 1%;
+  top: 50%;
+  background: rgba(47, 3, 82, 0.747);
+  color: #b8d4c5;
+  z-index: 10;
+}
+.header__item {
+  border-bottom: 2px solid;
+  border-color: rgba(71, 61, 139, 0.767);
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px 20px 10px;
+  text-align: center;
+}
+.header__item__buy {
+  border-bottom: 2px solid;
+  border-top: 2px solid;
+  border-color: rgba(71, 61, 139, 0.767);
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px 20px 10px;
+  text-align: center;
+}
+.body__title__h1 {
+  position: relative;
+  color: rebeccapurple;
+  text-align: center;
+  top: 2%;
+  margin-bottom: 50px;
+}
+
+.buy {
+  padding: 50px;
+  background: url(../img/Enigma_background.png) no-repeat center fixed;
+  height: 110vh;
+}
+
+.buy__wrapper {
+  flex-wrap: wrap;
+}
+
+.stage {
+  margin-bottom: 40px;
+  width: 50%;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+}
+
+.initial__title {
+  margin-bottom: 20px;
+  color:  rebeccapurple;;
+}
+
+.item {
+  position: relative;
+}
+.item__descr {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  transition: opacity .3s ease-in-out;
+  opacity: 0;
+  color: #bebebe;
+  background-color:#323232;
+  border: 2px solid;
+  padding: 5px;
+  border-color: rgb(155, 155, 155);
+  z-index: 10;
+}
+.item__img:hover + .item__descr {
+  opacity: 100%;
+}
+
+
+.immortal__items__header {
+  display: block;
+  margin-block-start: 3px;
+  margin-block-end: 3px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: center;
+}
+.immortal__h1 {
+  text-align: center;
+  color: goldenrod;
+}
+.immortal__h2 {
+  color: rgb(181, 169, 255);
+}
+.Geodesic__Eidolon {
+  text-align: right;
+  color: rgb(207, 200, 132);
+  background: url(../img/199575185806.jpg) no-repeat;
+  height: 45vh;
+  margin-left: 50px;
+  margin-right: 25px;
+  position: relative;
+  margin-bottom: 0%;
+}
+
+.World__Chasm__Artifact {
+  background: url(../img/Golden__gloves.png) no-repeat ;
+  height: 40vh;
+  margin-right: 25px;
+  margin-left: 50px;
+  text-align: right;
+  color:rgb(207, 200, 132);
+}
+.World__Chasm__Artifact__h2 {
+  color: rgb(181, 169, 255);
+  text-align: right;
+}
+.immortal__a {
+  color: rgb(191, 122, 255);
+}
+.immortal__background {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  background:url(../img/BH_background.png) no-repeat center fixed;
+  background-size: cover;
+}
+.background__ability {
+  background: url(../img/Enigma_background2.png) no-repeat center fixed;
+  height: 100vh;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+.ability__h2 {
+  text-align: right;
+  color: rgb(131, 81, 223);
+  margin-right: 15px;
+}
+.ability__h1 {
+  text-align: center;
+  color: rgb(80, 80, 204);
+}
+.ability__title {
+  color: rgb(186, 156, 214);
+  text-align: right;
+  margin-right: 15px;
+}
+.malefice {
+  background: url(../img/enigma_malefice.png) no-repeat left;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.Demonic__Conversion
+ {
+  background: url(../img/enigma_demonic_conversion.png) no-repeat left;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.midnight__pulse {
+  background: url(../img/enigma_midnight_pulse.png) no-repeat left;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.black__hole {
+  background: url(../img/enigma_black_hole.png) no-repeat left;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+
+.contacts-list {
+  flex-direction: column;
+  align-items: center;
+  color: rgb(197, 198, 247);
+}
+.contacts-list-block-vk {
+  padding: 20px 0 20px 0;
+}
+.contacts-list-block-vk-title {
+  background: url(../img/VK.png) no-repeat left top;
+  background-size: 16px;
+  padding-left: 20px;
+  color: aliceblue;
+}
+.contacts-list-block-discord-title {
+  background: url(../img/discord.png) no-repeat left top;
+  background-size: 20px;
+  padding-left: 20px;
+  color: aliceblue;
+}
+.contacts-list__h2 {
+  flex-direction: column;
+  text-align: center;
+  color: rgb(197, 198, 247);
+}
+.contacts {
+  padding: 50px 0;
+  background: url(../img/Enigmaa.png) no-repeat right;
+
+  background-color: rgb(78, 83, 87);
+}
+.last__title {
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgb(135, 200, 238);
+}

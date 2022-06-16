@@ -1,0 +1,101 @@
+html {
+    background-color: #dcdcdc;
+}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.name {
+    font-size: 30px;
+    color: #000;
+    margin: 0 0 20px 120px;
+}
+.header {
+    border-bottom: 1px solid #000;
+    margin-bottom: 30px;s
+}
+.content {
+}
+.content-item {
+    text-decoration: none;
+    color: #000;
+    margin-right: 20px;
+    align-items: center;
+}
+.section-settings {
+    margin-bottom: 30px;
+}
+.section-name {
+    margin: 0 30px 30px;
+    font-size: 30px;
+    line-height: 22px;
+}
+.about-me {
+    width: 50%;
+    margin-right: 50px
+}
+.my-photo {
+    position: right;
+    width: 50%;
+    height: 100%;
+}
+.charakteristika {
+    padding: 0;
+    margin-bottom: 50px;
+}
+.charakteristika h3 {
+    margin-right: 10px;
+}
+.article-content {
+    width: 25%;
+    margin-right: 20px;
+    height: 220px;
+    border-radius: 15px;
+}
+.article-content:last-child {
+    margin: 0;
+}
+.article-content-1 {
+    background-image: url(img/сила.jpg);
+    background-size: 100%;
+}
+.article-content-2 {
+    background-image: url(img/интеллект.jpg);
+    background-size: 100%;
+}
+.article-content-3 {
+    background-image: url(img/морально-волевые.jpg);
+    background-size: 100%;
+}
+.article-content-4 {
+    background-image: url(img/характер.jpg);
+    background-size: 100%;
+}
+.footer-settings {
+    border-top: 1px solid #000;
+}
+.contacts {
+    flex-direction: column;
+}
+.contacts-mail {
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 10px;
+}
+.contacts-tel {
+    text-decoration: none;
+    color: #000;
+}
+.social {
+    flex-direction: column;
+}
+.social a {
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 10px;
+}

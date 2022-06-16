@@ -55,6 +55,7 @@ body {
 
 .container {
   max-width: 1170px;
+  min-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -390,15 +391,14 @@ body {
   bottom: 0;
   right: 0;
   background: no-repeat center / cover;
-  opacity: 50%;
 }
 
 .img_1 {
-  background-image: url('../img/news.png');
+  background-image: url('../img/main-bg.png');
 }
 
 .img_2 {
-  background-image: url('../img/lagoona.png');
+  background-image: url('../img/placing-4.jpg');
 }
 
 .slide__link {
@@ -493,15 +493,18 @@ body {
   bottom: 0;
   right: 0;
   background: no-repeat center / cover;
-  opacity: 50%;
 }
 
 .self__img_1 {
-  background-image: url('../img/kuznecov.png');
+  background-image: url('../img/background.jpg');
 }
 
 .self__img_2 {
-  background-image: url('../img/kuznecov.png');
+  background-image: url('../img/cosmic-igra-game-enigma-elemental-enigma-art-dota-2-armor-do.jpg');
+}
+
+.self__img_3 {
+  background-image: url('../img/me.jpg');
 }
 
 .self__slide__link {
@@ -547,6 +550,10 @@ body {
   margin-right: 0;
 }
 
+.warning {
+  font-size: 20px;
+}
+/*
 @media screen and (max-width: 992px) {
   .container {
     max-width: 	730px;
@@ -702,4 +709,4 @@ body {
   .container {
     max-width: 	540px;
   }
-}
+} */
